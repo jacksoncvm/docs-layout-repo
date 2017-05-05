@@ -8,6 +8,21 @@
 @import "partials/local-header";
 @import "partials/fix-search-tables";
 
+// sub-nav offset for pre-release warning
+.nav-content > ul{
+  padding-top: 1.5em !important;
+}
+.has-subnav.content-layout {
+  padding-top: 2em !important;
+}
+.edge-banner {
+  font-size: 1em !important;
+}
+.local-header.title-container{
+  padding-top: 44px !important;
+}
+
+
 * {
   box-sizing: border-box;
 }
