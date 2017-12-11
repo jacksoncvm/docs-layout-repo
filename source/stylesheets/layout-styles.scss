@@ -414,3 +414,53 @@ category: basics
 .cf-cli_cf-help table, .cf-cli_cf-help table tr.separator, .cf-cli_cf-help table tr.separator td {
   border: none;
 }
+
+// Notes and tips
+.note {
+  background: #ffffed;
+  border-color: #ebebd3;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1em 0;
+  padding: 0.7em 1em 0.7em 2.3em;
+  position: relative;
+  &:before {
+    content: $fa-var-lightbulb-o;
+    @extend .fa;
+    color: #b9b781;
+    font-size: 1.5em;
+    left: 0.6em;
+    position: absolute;
+    top: 0.45em;
+  }
+}
+
+.note.warning {
+  background-color: #fdd;
+  border-color: #fbb;
+  &:before {
+    content: "\F071";
+    font-family: FontAwesome;
+    color: #b9b781;
+    font-size: 1.2em;
+    left: 0.6em;
+    position: absolute;
+    top: 0.75em;
+  }
+}
+
+.note.breaking {
+  background-color: #fdd;
+  border-color: #fbb;
+  &:before {
+    content: "\F127";
+    font-family: FontAwesome;
+    color: #000000;
+    font-size: 1.2em;
+    left: 0.6em;
+    position: absolute;
+    top: 0.75em;
+  }
+}
+
